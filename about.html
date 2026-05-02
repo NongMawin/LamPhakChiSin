@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติวงลำผักชีศิลป์</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        html, body { height: 100%; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Kanit', sans-serif; 
+            background-color: #fafaf9; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="text-stone-800">
+
+    <!-- Navigation Bar -->
+    <nav class="p-4 bg-white/80 backdrop-blur-md flex justify-between items-center sticky top-0 z-50 border-b border-stone-200">
+        <div class="flex items-center gap-3">
+            <h1 class="text-xl font-bold text-amber-800">ลำผักชีศิลป์</h1>
+        </div>
+        <div class="space-x-6 text-sm font-medium">
+            <a href="index.html" class="hover:text-amber-600 transition">หน้าแรก</a>
+            <a href="about.html" class="text-amber-600 border-b-2 border-amber-600 pb-1">ประวัติวง</a>
+        </div>
+    </nav>
+
+    <!-- Header Section พร้อมพื้นหลังรูปภาพ -->
+    <header class="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/Black Gold.png" alt="Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-stone-900/40"></div>
+        </div>
+        <div class="relative z-10 text-center px-5">
+            <h2 class="text-5xl md:text-8xl font-bold mb-4 text-white drop-shadow-2xl tracking-tighter">
+                ประวัติวงลำผักชีศิลป์
+            </h2>
+            <p class="text-lg md:text-2xl text-stone-100 italic font-light drop-shadow-lg">
+                "สืบสานดนตรีไทย ด้วยหัวใจคนรุ่นใหม่"
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content: อัปเดตข้อมูลประวัติใหม่ -->
+    <main class="flex-grow max-w-4xl mx-auto px-5 py-20">
+        <div class="bg-white p-10 md:p-16 rounded-[3rem] shadow-sm border border-stone-100">
+            <h3 class="text-3xl font-bold mb-10 text-stone-800 text-center uppercase tracking-widest border-b pb-6">เรื่องราวของพวกเรา</h3>
+            
+            <div class="space-y-8 text-lg text-stone-600 leading-relaxed">
+                <section>
+                    <h4 class="font-bold text-amber-900 mb-2">● จุดเริ่มต้นและการเดินทาง</h4>
+                    <p>
+                        วงลำผักชีศิลป์ก่อตั้งขึ้นในปี **พ.ศ. 2556** โดย **นายศราวุธ เตมีศักดิ์** ในช่วงเวลานั้นวงได้มีโอกาสสร้างสรรค์ผลงานและออกงานแสดงมาแล้วมากมาย จนเป็นที่รู้จักในฐานะวงดนตรีที่สืบสานศิลปะล้านนา
+                    </p>
+                </section>
+
+                <section>
+                    <h4 class="font-bold text-amber-900 mb-2">● การเปลี่ยนแปลงครั้งสำคัญ</h4>
+                    <p>
+                        หลังจากสร้างผลงานมาอย่างต่อเนื่อง นายศราวุธได้ตัดสินใจลาออกจากวงในปี **พ.ศ. 2564 (ค.ศ. 2021)** ทำให้วงเข้าสู่ช่วงการเปลี่ยนผ่าน จนกระทั่งในปี **พ.ศ. 2567** ได้มีคุณครูท่านใหม่เข้ามาดูแลเพื่อสืบสานอุดมการณ์ต่อ
+                    </p>
+                </section>
+
+                <section>
+                    <h4 class="font-bold text-amber-900 mb-2">● ก้าวใหม่ในปัจจุบัน</h4>
+                    <p>
+                        ภายใต้การดูแลใหม่ วงได้มีการปรับเปลี่ยนรูปแบบการนำเสนอจาก **วงล้านนา** มาเป็น **วงปี่พาทย์** แทน เพื่อเพิ่มความหลากหลายและรักษาเอกลักษณ์ดนตรีไทยในอีกรูปแบบหนึ่ง 
+                    </p>
+                    <p class="mt-4 text-stone-500 italic text-sm">
+                        *ปัจจุบันวงอยู่ในระหว่างการฝึกซ้อมและพัฒนาฝีมือ จึงยังไม่มีการรับงานแสดงในขณะนี้
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#1c1917] text-stone-500 text-center text-sm">
+        <p>© 2026 ลำผักชีศิลป์ - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
