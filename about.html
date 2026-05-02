@@ -15,64 +15,77 @@
             flex-direction: column;
             min-height: 100vh;
         }
+        /* ปรับสีตัวอักษรให้อ่านง่ายบนมือถือ */
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
     </style>
 </head>
 <body class="text-stone-800">
 
-    <!-- Navigation Bar -->
-    <nav class="p-4 bg-white/80 backdrop-blur-md flex justify-between items-center sticky top-0 z-50 border-b border-stone-200">
-        <div class="flex items-center gap-3">
-            <h1 class="text-xl font-bold text-amber-800">ลำผักชีศิลป์</h1>
+    <!-- Navigation Bar: ปรับให้กะทัดรัดขึ้นบนมือถือ -->
+    <nav class="p-3 md:p-4 bg-white/90 backdrop-blur-md flex justify-between items-center sticky top-0 z-50 border-b border-stone-200">
+        <div class="flex items-center gap-2">
+            <h1 class="text-lg md:text-xl font-bold text-amber-800">ลำผักชีศิลป์</h1>
         </div>
-        <div class="space-x-6 text-sm font-medium">
-            <a href="index.html" class="hover:text-amber-600 transition">หน้าแรก</a>
+        <div class="space-x-4 md:space-x-6 text-xs md:text-sm font-medium">
+            <a href="index.html" class="hover:text-amber-600">หน้าแรก</a>
             <a href="about.html" class="text-amber-600 border-b-2 border-amber-600 pb-1">ประวัติวง</a>
         </div>
     </nav>
 
-    <!-- Header Section พร้อมพื้นหลังรูปภาพ -->
-    <header class="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
+    <!-- Header: ปรับความสูงให้ยืดหยุ่น (Mobile: 300px / PC: 500px) -->
+    <header class="relative h-[300px] md:h-[500px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="images/Black Gold.png" alt="Background" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-stone-900/40"></div>
+            <img src="images/LamPhakChiSin.png" alt="Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-stone-900/50"></div>
         </div>
-        <div class="relative z-10 text-center px-5">
-            <h2 class="text-5xl md:text-8xl font-bold mb-4 text-white drop-shadow-2xl tracking-tighter">
+        <div class="relative z-10 text-center px-4">
+            <!-- ปรับขนาด Font: มือถือ text-4xl / PC text-8xl -->
+            <h2 class="text-3xl md:text-8xl font-bold mb-3 text-white text-shadow tracking-tight">
                 ประวัติวงลำผักชีศิลป์
             </h2>
-            <p class="text-lg md:text-2xl text-stone-100 italic font-light drop-shadow-lg">
+            <p class="text-sm md:text-2xl text-stone-200 italic font-light drop-shadow-md">
                 "สืบสานดนตรีไทย ด้วยหัวใจคนรุ่นใหม่"
             </p>
         </div>
     </header>
 
-    <!-- Main Content: อัปเดตข้อมูลประวัติใหม่ -->
-    <main class="flex-grow max-w-4xl mx-auto px-5 py-20">
-        <div class="bg-white p-10 md:p-16 rounded-[3rem] shadow-sm border border-stone-100">
-            <h3 class="text-3xl font-bold mb-10 text-stone-800 text-center uppercase tracking-widest border-b pb-6">เรื่องราวของพวกเรา</h3>
+    <!-- Main Content: ลด Padding ในมือถือลงเพื่อไม่ให้เบียดตัวหนังสือ -->
+    <main class="flex-grow w-full max-w-4xl mx-auto px-3 md:px-5 py-8 md:py-20">
+        <div class="bg-white p-6 md:p-16 rounded-[1.5rem] md:rounded-[3rem] shadow-sm border border-stone-100">
+            <h3 class="text-xl md:text-3xl font-bold mb-6 md:mb-10 text-stone-800 text-center uppercase tracking-widest border-b pb-4">
+                เรื่องราวของพวกเรา
+            </h3>
             
-            <div class="space-y-8 text-lg text-stone-600 leading-relaxed">
+            <div class="space-y-6 md:space-y-8 text-base md:text-lg text-stone-600 leading-relaxed">
                 <section>
-                    <h4 class="font-bold text-amber-900 mb-2">● จุดเริ่มต้นและการเดินทาง</h4>
-                    <p>
-                        วงลำผักชีศิลป์ก่อตั้งขึ้นในปี **พ.ศ. 2556** โดย **นายศราวุธ เตมีศักดิ์** ในช่วงเวลานั้นวงได้มีโอกาสสร้างสรรค์ผลงานและออกงานแสดงมาแล้วมากมาย จนเป็นที่รู้จักในฐานะวงดนตรีที่สืบสานศิลปะล้านนา
+                    <h4 class="font-bold text-amber-900 mb-1 flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 bg-amber-600 rounded-full"></span> จุดเริ่มต้นและการเดินทาง
+                    </h4>
+                    <p class="pl-3">
+                        วงลำผักชีศิลป์ก่อตั้งขึ้นในปี **พ.ศ. 2556** โดย **นายศราวุธ เตมีศักดิ์** ในช่วงเวลานั้นวงได้มีโอกาสสร้างสรรค์ผลงานและออกงานแสดงมาแล้วมากมาย
                     </p>
                 </section>
 
                 <section>
-                    <h4 class="font-bold text-amber-900 mb-2">● การเปลี่ยนแปลงครั้งสำคัญ</h4>
-                    <p>
-                        หลังจากสร้างผลงานมาอย่างต่อเนื่อง นายศราวุธได้ตัดสินใจลาออกจากวงในปี **พ.ศ. 2564 (ค.ศ. 2021)** ทำให้วงเข้าสู่ช่วงการเปลี่ยนผ่าน จนกระทั่งในปี **พ.ศ. 2567** ได้มีคุณครูท่านใหม่เข้ามาดูแลเพื่อสืบสานอุดมการณ์ต่อ
+                    <h4 class="font-bold text-amber-900 mb-1 flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 bg-amber-600 rounded-full"></span> การเปลี่ยนแปลงครั้งสำคัญ
+                    </h4>
+                    <p class="pl-3">
+                        ต่อมานายศราวุธได้ตัดสินใจลาออกจากวงในปี **พ.ศ. 2564 (ค.ศ. 2021)** จนกระทั่งในปี **พ.ศ. 2567** ได้มีคุณครูท่านใหม่เข้ามาดูแลเพื่อสืบสานอุดมการณ์ต่อ
                     </p>
                 </section>
 
                 <section>
-                    <h4 class="font-bold text-amber-900 mb-2">● ก้าวใหม่ในปัจจุบัน</h4>
-                    <p>
-                        ภายใต้การดูแลใหม่ วงได้มีการปรับเปลี่ยนรูปแบบการนำเสนอจาก **วงล้านนา** มาเป็น **วงปี่พาทย์** แทน เพื่อเพิ่มความหลากหลายและรักษาเอกลักษณ์ดนตรีไทยในอีกรูปแบบหนึ่ง 
+                    <h4 class="font-bold text-amber-900 mb-1 flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 bg-amber-600 rounded-full"></span> ก้าวใหม่ในปัจจุบัน
+                    </h4>
+                    <p class="pl-3">
+                        วงได้ปรับเปลี่ยนรูปแบบการนำเสนอจาก **วงล้านนา** มาเป็น **วงปี่พาทย์** แทน เพื่อเพิ่มความหลากหลายของเอกลักษณ์ดนตรีไทย
                     </p>
-                    <p class="mt-4 text-stone-500 italic text-sm">
-                        *ปัจจุบันวงอยู่ในระหว่างการฝึกซ้อมและพัฒนาฝีมือ จึงยังไม่มีการรับงานแสดงในขณะนี้
+                    <p class="mt-4 text-stone-500 italic text-xs md:text-sm pl-3">
+                        *ปัจจุบันวงอยู่ในระหว่างการฝึกซ้อม จึงยังไม่มีการรับงานแสดงในขณะนี้
                     </p>
                 </section>
             </div>
@@ -80,7 +93,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-12 bg-[#1c1917] text-stone-500 text-center text-sm">
+    <footer class="py-8 md:py-12 bg-[#1c1917] text-stone-500 text-center text-[10px] md:text-sm">
         <p>© 2026 ลำผักชีศิลป์ - All Rights Reserved</p>
     </footer>
 
