@@ -15,87 +15,74 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        /* ปรับสีตัวอักษรให้อ่านง่ายบนมือถือ */
-        .text-shadow {
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
     </style>
 </head>
 <body class="text-stone-800">
 
-    <!-- Navigation Bar: ปรับให้กะทัดรัดขึ้นบนมือถือ -->
+    <!-- Navigation -->
     <nav class="p-3 md:p-4 bg-white/90 backdrop-blur-md flex justify-between items-center sticky top-0 z-50 border-b border-stone-200">
         <div class="flex items-center gap-2">
             <h1 class="text-lg md:text-xl font-bold text-amber-800">ลำผักชีศิลป์</h1>
         </div>
         <div class="space-x-4 md:space-x-6 text-xs md:text-sm font-medium">
-            <a href="index.html" class="hover:text-amber-600">หน้าแรก</a>
+            <a href="index.html" class="hover:text-amber-600 transition">หน้าแรก</a>
             <a href="about.html" class="text-amber-600 border-b-2 border-amber-600 pb-1">ประวัติวง</a>
         </div>
     </nav>
 
-    <!-- Header: ปรับความสูงให้ยืดหยุ่น (Mobile: 300px / PC: 500px) -->
+    <!-- Header Section -->
     <header class="relative h-[300px] md:h-[500px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="images/LamPhakChiSin.png" alt="Background" class="w-full h-full object-cover">
+            <img src="images/Black Gold.png" alt="Background" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-stone-900/50"></div>
         </div>
         <div class="relative z-10 text-center px-4">
-            <!-- ปรับขนาด Font: มือถือ text-4xl / PC text-8xl -->
             <h2 class="text-3xl md:text-8xl font-bold mb-3 text-white text-shadow tracking-tight">
                 ประวัติวงลำผักชีศิลป์
             </h2>
-            <p class="text-sm md:text-2xl text-stone-200 italic font-light drop-shadow-md">
+            <p class="text-xs md:text-2xl text-stone-200 italic font-light drop-shadow-md">
                 "สืบสานดนตรีไทย ด้วยหัวใจคนรุ่นใหม่"
             </p>
         </div>
     </header>
 
-    <!-- Main Content: ลด Padding ในมือถือลงเพื่อไม่ให้เบียดตัวหนังสือ -->
-    <main class="flex-grow w-full max-w-4xl mx-auto px-3 md:px-5 py-8 md:py-20">
-        <div class="bg-white p-6 md:p-16 rounded-[1.5rem] md:rounded-[3rem] shadow-sm border border-stone-100">
-            <h3 class="text-xl md:text-3xl font-bold mb-6 md:mb-10 text-stone-800 text-center uppercase tracking-widest border-b pb-4">
+    <!-- Main Content: ปรับให้เข้ากับมือถือมากขึ้น -->
+    <main class="flex-grow w-full max-w-5xl mx-auto px-4 py-8 md:py-16">
+        
+        <!-- ส่วนเนื้อหาประวัติ: ปรับความกว้างและระยะบรรทัด -->
+        <div class="bg-white p-6 md:p-12 rounded-[2rem] shadow-sm border border-stone-100 mb-12">
+            <h3 class="text-xl md:text-3xl font-bold mb-6 md:mb-8 text-stone-800 text-center border-b pb-4">
                 เรื่องราวของพวกเรา
             </h3>
-            
-            <div class="space-y-6 md:space-y-8 text-base md:text-lg text-stone-600 leading-relaxed">
-                <section>
-                    <h4 class="font-bold text-amber-900 mb-1 flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 bg-amber-600 rounded-full"></span> จุดเริ่มต้นและการเดินทาง
-                    </h4>
-                    <p class="pl-3">
-                        วงลำผักชีศิลป์ก่อตั้งขึ้นในปี **พ.ศ. 2556** โดย **นายศราวุธ เตมีศักดิ์** ในช่วงเวลานั้นวงได้มีโอกาสสร้างสรรค์ผลงานและออกงานแสดงมาแล้วมากมาย
-                    </p>
-                </section>
-
-                <section>
-                    <h4 class="font-bold text-amber-900 mb-1 flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 bg-amber-600 rounded-full"></span> การเปลี่ยนแปลงครั้งสำคัญ
-                    </h4>
-                    <p class="pl-3">
-                        ต่อมานายศราวุธได้ตัดสินใจลาออกจากวงในปี **พ.ศ. 2564 (ค.ศ. 2021)** จนกระทั่งในปี **พ.ศ. 2567** ได้มีคุณครูท่านใหม่เข้ามาดูแลเพื่อสืบสานอุดมการณ์ต่อ
-                    </p>
-                </section>
-
-                <section>
-                    <h4 class="font-bold text-amber-900 mb-1 flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 bg-amber-600 rounded-full"></span> ก้าวใหม่ในปัจจุบัน
-                    </h4>
-                    <p class="pl-3">
-                        วงได้ปรับเปลี่ยนรูปแบบการนำเสนอจาก **วงล้านนา** มาเป็น **วงปี่พาทย์** แทน เพื่อเพิ่มความหลากหลายของเอกลักษณ์ดนตรีไทย
-                    </p>
-                    <p class="mt-4 text-stone-500 italic text-xs md:text-sm pl-3">
-                        *ปัจจุบันวงอยู่ในระหว่างการฝึกซ้อม จึงยังไม่มีการรับงานแสดงในขณะนี้
-                    </p>
-                </section>
+            <div class="space-y-6 text-base md:text-lg text-stone-600 leading-relaxed text-center md:text-left">
+                <p>
+                    วงลำผักชีศิลป์ก่อตั้งขึ้นในปี **พ.ศ. 2556** โดย **นายศราวุธ เตมีศักดิ์** ซึ่งในอดีตได้เคยออกงานแสดงมาแล้วมากมาย ก่อนที่จะมีการเปลี่ยนผ่านในปี **พ.ศ. 2564**
+                </p>
+                <p>
+                    ต่อมาในปี **พ.ศ. 2567** ได้มีการเริ่มต้นใหม่ภายใต้การดูแลของคุณครูท่านใหม่ และเปลี่ยนรูปแบบจาก **วงล้านนา** มาเป็น **วงปี่พาทย์** เพื่อสืบสานศิลปะต่อไป
+                </p>
             </div>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="py-8 md:py-12 bg-[#1c1917] text-stone-500 text-center text-[10px] md:text-sm">
-        <p>© 2026 ลำผักชีศิลป์ - All Rights Reserved</p>
-    </footer>
+        <!-- ส่วนบรรยากาศการฝึกซ้อม (วิดีโอ) -->
+        <div class="space-y-6 md:space-y-8">
+            <h3 class="text-xl md:text-3xl font-bold text-center text-amber-900">
+                บรรยากาศการฝึกซ้อม
+            </h3>
+            
+            <div class="max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-xl bg-black border-4 border-white">
+                <!-- ใส่ไฟล์วิดีโอของคุณตรงนี้ -->
+                <video class="w-full h-auto" controls>
+                    <source src="videos/download (1).mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <p class="text-center text-stone-500 italic text-xs md:text-sm px-4">
+                "รับชมการฝึกซ้อมของวงลำผักชีศิลป์ เพื่อเตรียมความพร้อมสำหรับการสืบสานดนตรีปี่พาทย์"
+            </p>
+        </div>
+    </main>
 
 </body>
 </html>
